@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --fonte-padrao: 'Lato', sans-serif;
+    --fonte-secundaria: 'Lato', sans-serif;
+    --fonte-destaque: 'Dancing Script', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box, content-box;
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #04AA6D;
+    color: white;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    margin-left: 520px;
+    margin-top: 110px;
+}
+
+.pipula {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.pipula>a{
+    font-size: 40px;
+    color: antiquewhite;
+    padding: 5px;
+    border: 1px solid white;
+    font-family: var(--fonte-secundaria);
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.cineminha>a {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 30px;
+}
+
+header>div>.comprar {
+    border: 3px solid gray;
+    border-radius: 4px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+header>div>.comprar>a {
+    color: gray;
+}
+
+header>div>.comprar>a:hover {
+    color: white;
+}
+
+header>div>.comprar:hover {
+
+    background-color: gray;
+}
+
+.Cartaz {
+    background-color: gray;
+    padding-bottom: 40px;
+}
+
+.Cartaz>.emCartaz>div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+.Cartaz>.emCartaz>div>.filmes>a>img {
+    width: 300px;
+    height: 400px;
+    padding: 50px;
+}
+
+.Cartaz>.emCartaz>div>.filmes:hover {
+    background-color: black;
+}
+
+.Cartaz>.emCartaz>h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: var(--fonte-padrao);
+}
+
+.up {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+}
+
+.up>a>img {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.detalhes_banner>img {
+    width: 100%;
+    height: 500px;
+}
+
+.detalhes_banner{
+    height: 500px;
+}
+
+.Carrosel {
+    background-color: black;
+    padding: 20px;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides>img {
+    width: 1000px;
+    height: 400px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.programação>.cabeçalho {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.programação>.cabeçalho>.dias {
+    display: flex;
+    justify-content: space-around;
+}
+
+.programação>.cabeçalho>.dias>div {
+    border: 2px solid red;
+    border-radius: 10px;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.programação>.cabeçalho>.dias>div>button {
+    color: red;
+}
+
+.programação>.cabeçalho>.dias>div>button:hover {
+    color: white;
+}
+
+.programação>.cabeçalho>.dias>div:hover {
+    background-color: red;
+    color: white;
+}
+
+.programação>.tabcontent {
+    display: flex;
+}
+
+.programação>div>div>div>a>img {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+}
+
+.programação>div>div>div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.horario {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    text-align: justify;
+}
+
+.filme {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.salas {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.salas:hover {
+    border: 1px solid red;
+    padding: 15px;
+    color: red;
+}
+
+
+.emBreve {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    flex-direction: row;
+}
+
+.emBreve>.horario {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.informações {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #bbb;
+    color: black;
+    border-top: 3px solid black;
+}
+
+.informações>.separaçao>div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.informações>.separaçao {
+    display: flex;
+    flex-direction: row;
+}
+
+.informações>div {
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+footer>div {
+    text-align: center;
+    align-items: center;
+}
+
+.Pré-estreia>h1 {
+    text-align: center;
+}
+
+.emBreve>.colum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emBreve>.img>a>img {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+}
+
+.detalhes_corpo>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+}
+
+.detalhes_corpo>div>div>img{
+    width: 300px;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.detalhes_corpo>div>.texto>pre>strong{
+    font-size: 25px;
+}
+
+.detalhes_corpo>div>.texto>pre>.titulo{
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+pre{
+    font-size: 18px;
+    padding: 5px;
+}
+
+strong{
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+
+.detalhes_corpo>.parte2>.sessões>div{
+    background-color: aliceblue;
+    color: #717171;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.detalhes_corpo>.parte2>.sessões>div:hover{
+    background-color: lightgrey;
+    color: black;
+}
+
+.detalhes_corpo>.parte2>.sessões{
+    display: flex;
+    flex-direction: column;
+    margin-left: 105px;
+    margin-bottom: 20px;
+}
+
+.detalhes_corpo>.parte2{
+    display: flex;
+    flex-direction: column;
+}
+
+.detalhes_corpo>.parte2>.trailer{
+    margin-left: 96px;
+    margin-bottom: 30px;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .ingressobutton {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+   
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  
+
+  .container {
+    padding: 16px;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit/register button */
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+  .container>h1{
+    margin: 10px;
+    margin-left: 0px;
+  }
+  
+  .ingresso>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  .topo{
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  .topo>div>button{
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 5px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  select, .poltrona{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+
+
+

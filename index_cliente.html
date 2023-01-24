@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header id="up">
+        <div>
+            <div class="comprar"><a href="index.html">Voltar ao menu principal</a></div>
+            <div class="cineminha"><a href="index_cliente.html">Cinema da Luizinha</a></div>
+            <div class="comprar"><a href="ingresso.html">Comprar Ingresso</a></div>
+        </div>
+    </header>
+    <section class="Carrosel">
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="Imagens/adao_negro_detalhes.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Imagens/one_piece_detalhes.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Imagens/pantera_negra_detalhes.jpg">
+
+            </div>
+
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </section>
+    <section class="Cartaz">
+
+        <div class="emCartaz">
+            <h1>Filmes em Cartaz</h1>
+            <div>
+                <div class="filmes"><a href="detalhes_adao_negro.html"><img src="Imagens/adao_negro_poster.jpg"></a>
+                </div>
+                <div class="filmes"><a href="detalhes_one_piece.html"><img src="Imagens/one_piece_poster.jpg"></a>
+                </div>
+                <div class="filmes"><a href="detalhes_pantera_negra.html"><img src="Imagens/pnatera_negra_poster.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="up">
+        <a href="index_cliente.html#up"><img src="Imagens/setinha.webp"></a>
+    </div>
+
+    <section class="programação">
+        <div class="cabeçalho">
+            <div>
+                <h1>Programação</h1>
+            </div>
+            <div class="dias">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Hoje')">Hoje</button>
+                    <button class="tablinks" onclick="openCity(event, 'sáb 12/11')">sáb 12/11</button>
+                    <button class="tablinks" onclick="openCity(event, 'dom 13/11')">dom 13/11</button>
+                    <button class="tablinks" onclick="openCity(event, 'seg 14/11')">seg 14/11</button>
+                    <button class="tablinks" onclick="openCity(event, 'ter 15/11')">ter 15/11</button>
+                    <button class="tablinks" onclick="openCity(event, 'qua 16/11')">qua 16/11</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Hoje" class="tabcontent">
+            <div class="filme">
+                <div class="img">
+                    <a href="detalhes_one_piece.html"><img src="Imagens/one_piece_banner.jpg"></a>
+                </div>
+                <div class="horario">
+                    <h2>One Piece Filme 15: Red</h2>
+                    <p> 10 | Animação ● Aventura ● Ação ● Fantasia</p>
+                    <div class="salas">
+                        <p>Sala 2:
+                            19:30 - DUB - 2D</p>
+                        <p>Sala 3:
+                            21:30 - DUB - 2D</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filme">
+                <div class="img">
+                    <a href="detalhes_pantera_negra.html"><img src="Imagens/pantera_negra_banner.jpg"></a>
+                </div>
+                <div class="horario">
+                    <h2>Pantera Negra:<br> Wakanda para Sempre</h2>
+                    <p> 14 | Ação ● Aventura ● Ficção científica</p>
+                    <div class="salas">
+                        <p>Sala 1:
+                            19:30 - DUB - 2D</p>
+                        <p>Sala 2:
+                            21:30 - DUB - 2D</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="sáb 12/11" class="tabcontent">
+            <div class="filme">
+                <div class="img">
+                    <a href="detalhes_adao_negro.html"><img src="Imagens/adao_negro_banner.jpg"></a>
+                </div>
+                <div class="horario">
+                    <h2>Adão Negro</h2>
+                    <p> 14 | Ação ● Fantasia ● Aventura</p>
+                    <div class="salas">
+                        <p>Sala 2:
+                            21:30 - DUB - 2D</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filme">
+                <div class="img">
+                    <a href="detalhes_pantera_negra.html"><img src="Imagens/pantera_negra_banner.jpg"></a>
+                </div>
+                <div class="horario">
+                    <h2>Pantera Negra:<br> Wakanda para Sempre</h2>
+                    <p> 14 | Ação ● Aventura ● Ficção científica</p>
+                    <div class="salas">
+                        <p>Sala 1:
+                            19:30 - DUB - 2D</p>
+                        <p>Sala 2:
+                            21:30 - DUB - 2D</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dom 13/11" class="tabcontent">
+            <div class="filme">
+                <div class="img">
+                    <a href="detalhes_adao_negro.html"><img src="Imagens/adao_negro_banner.jpg"></a>
+                </div>
+                <div class="horario">
+                    <h2>Adão Negro</h2>
+                    <p> 14 | Ação ● Fantasia ● Aventura</p>
+                    <div class="salas">
+                        <p>Sala 2:
+                            21:30 - DUB - 2D</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filme">
+                <div class="img">
+                    <a href="detalhes_one_piece.html"><img src="Imagens/one_piece_banner.jpg"></a>
+                </div>
+                <div class="horario">
+                    <h2>One Piece Filme 15: Red</h2>
+                    <p> 10 | Animação ● Aventura ● Ação ● Fantasia</p>
+                    <div class="salas">
+                        <p>Sala 2:
+                            19:30 - DUB - 2D</p>
+                        <p>Sala 3:
+                            21:30 - DUB - 2D</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="seg 14/11" class="tabcontent">
+            <div class="filme">
+                <div class="img">
+                    <a href="detalhes_one_piece.html"><img src="Imagens/one_piece_banner.jpg"></a>
+                </div>
+                <div class="horario">
+                    <h2>One Piece Filme 15: Red</h2>
+                    <p> 10 | Animação ● Aventura ● Ação ● Fantasia</p>
+                    <div class="salas">
+                        <p>Sala 2:
+                            19:30 - DUB - 2D</p>
+                        <p>Sala 3:
+                            21:30 - DUB - 2D</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filme">
+                <div class="img">
+                    <a href="detalhes_pantera_negra.html"><img src="Imagens/pantera_negra_banner.jpg"></a>
+                </div>
+                <div class="horario">
+                    <h2>Pantera Negra:<br> Wakanda para Sempre</h2>
+                    <p> 14 | Ação ● Aventura ● Ficção científica</p>
+                    <div class="salas">
+                        <p>Sala 1:
+                            19:30 - DUB - 2D</p>
+                        <p>Sala 2:
+                            21:30 - DUB - 2D</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ter 15/11" class="tabcontent">
+            <div class="filme">
+                <div class="img">
+                    <a href="detalhes_adao_negro.html"><img src="Imagens/adao_negro_banner.jpg"></a>
+                </div>
+                <div class="horario">
+                    <h2>Adão Negro</h2>
+                    <p> 14 | Ação ● Fantasia ● Aventura</p>
+                    <div class="salas">
+                        <p>Sala 2:
+                            21:30 - DUB - 2D</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filme">
+                <div class="img">
+                    <a href="detalhes_pantera_negra.html"><img src="Imagens/pantera_negra_banner.jpg"></a>
+                </div>
+                <div class="horario">
+                    <h2>Pantera Negra:<br> Wakanda para Sempre</h2>
+                    <p> 14 | Ação ● Aventura ● Ficção científica</p>
+                    <div class="salas">
+                        <p>Sala 1:
+                            19:30 - DUB - 2D</p>
+                        <p>Sala 2:
+                            21:30 - DUB - 2D</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="qua 16/11" class="tabcontent">
+            <div class="filme">
+                <div class="img">
+                    <a href="detalhes_one_piece.html"><img src="Imagens/one_piece_banner.jpg"></a>
+                </div>
+                <div class="horario">
+                    <h2>One Piece Filme 15: Red</h2>
+                    <p> 10 | Animação ● Aventura ● Ação ● Fantasia</p>
+                    <div class="salas">
+                        <p>Sala 2:
+                            19:30 - DUB - 2D</p>
+                        <p>Sala 3:
+                            21:30 - DUB - 2D</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filme">
+                <div class="img">
+                    <a href="detalhes_pantera_negra.html"><img src="Imagens/pantera_negra_banner.jpg"></a>
+                </div>
+                <div class="horario">
+                    <h2>Pantera Negra:<br> Wakanda para Sempre</h2>
+                    <p> 14 | Ação ● Aventura ● Ficção científica</p>
+                    <div class="salas">
+                        <p>Sala 1:
+                            19:30 - DUB - 2D</p>
+                        <p>Sala 2:
+                            21:30 - DUB - 2D</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Pré-estreia">
+        <h1>Em breve nos cinemas</h1>
+        <div class="emBreve" id="emBreve">
+
+            <div class="img">
+                <a href="index_cliente.html#emBreve"><img src="Imagens/avatar_banner.jpg"></a>
+            </div>
+            <div class="colum">
+                <div class="horario">
+                    <pre>
+                    <strong>Avatar: O Caminho da Água</strong>
+                    10 | Aventura ● Ficção científica
+                    </pre>
+                </div>
+                <div class="salas">
+                    <p>ESTREIA EM 15/12</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="informações">
+        <div>
+            <strong>Segunda, terça e quarta todos pagam meia entrada! (EXCETO EM DIAS DE PRÉ-ESTRÉIA!)</strong>
+        </div>
+        <div class="separaçao">
+            <div>
+                <pre>
+                    <strong>Informações Importantes</strong>
+                        A programação pode ser alterada sem prévio aviso.
+                        O cancelamento de ingressos comprados pelo site pode ser efetuado até 02 horas antes do filme começar.
+                        Envie os dados da compra para o Whatsapp solicitando o cancelamento. 
+                        Não é possível cancelar ingressos que foram pagos com Pix.
+                        As compras realizadas em pontos de venda ou na bilheteria são intransferíveis e não podem ser canceladas.
+                        Não é permitido o consumo de alimentos que contenha Carne e Leite dentro das salas.
+                </pre>
+            </div>
+            <div>
+                <pre>
+                <strong>Tabela de Preços</strong>
+                    Filmes em 2D: R$22,00 e R$11,00
+                    Filmes em 3D: R$24,00 e R$12,00
+            </pre>
+            </div>
+        </div>
+        <div>
+            <p>
+            <pre>
+                <strong>Quem paga meia?</strong>
+                    Crianças até 12 anos (RG), Estudantes (carteirinha válida ou declaração com carimbo e RG)**, Idosos,
+                    Funcionários da Coamo (Crachá), Sesc (carteirinha atualizada de comerciário ou dependente), Doadores de
+                    sangue (últimos 6 meses com carteirinha), Funcionários do Paraná Supermercados (Crachá), Funcionários da
+                    UNIMED com (Crachá), Clube da Cultura, Funcionários Integrado (holerite e RG), Policiais e Bombeiros,
+                    Profissionais da educação (holerite), Pessoas com deficiência e ID Jovem (App aberto)
+            </pre>
+            </p>
+        </div>
+
+    </section>
+    <footer>
+        <div>
+            <p>SIGA NOSSAS REDES SOCIAIS</p>
+
+            <a href="https://www.instagram.com/luiza_basseto/"><img src="Imagens/instagram.png" class="icon"></a>
+
+            <a href="https://twitter.com/BassetoLuiza"><img src="Imagens/twitter.png" class="icon"></a>
+        </div>
+
+
+    </footer>
+    <script src="carrosel.js"></script>
+</body>
+
+</html>

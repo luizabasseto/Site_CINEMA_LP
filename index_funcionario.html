@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header id="up">
+        <div>
+            <div class="comprar"><a href="index.html">Voltar ao menu principal</a></div>
+            <div class="cineminha"><a href="index_cliente.html">Cinema da Luizinha</a></div>
+            <div class="comprar"><a href="ingresso.html">Comprar Ingresso</a></div>
+        </div>
+    </header>
+
+    <section class="sistema">
+        <div>
+            <form action="#" method="post">
+
+                <div class="container">
+                    <div class="topo">
+                        <div>
+                            <label for="uname"><b>CPF</b></label>
+                            <input type="text" placeholder="Digite seu cpf" name="uname" required>
+                        </div>
+                        <div>
+                            <button type="submit">Buscar</button>
+                            <button type="submit">Cancelar</button>
+                            <button type="submit">Salvar</button>
+                            <button type="submit">Atualizar</button>
+                            <button type="submit">Excluir</button>
+                        </div>
+                    </div>
+
+                    <label for="text"><b>Nome</b></label>
+                    <input type="text" placeholder="Digite seu nome" name="uname" required>
+                    <label for="text"><b>Email</b></label>
+                    <input type="text" placeholder="Digite seu Email" name="uname" required>
+                    <label for="text"><b>Endereço</b></label>
+                    <input type="text" placeholder="Digite seu Endereço" name="uname" required>
+                    <select id=Sessao>
+                        <option>Selecione a Sessão</option>
+                        <option><pre>
+                            One Piece Filme 15: Red  ------  Sala 2:
+                                21:30 - DUB - 2D
+                        </pre></option>
+                        <option><pre>
+                            Adão Negro     ------         Sala 2:
+                                19:30 - DUB - 2D
+                        </pre>
+                        </option>
+                        <option><pre>
+                             Pantera Negra: Wakanda para Sempre       ------      Sala 3:
+                                21:30 - DUB - 2D
+                        </pre></option>
+                    </select>
+                    <label for="text"><b>Quantidade</b></label>
+                    <input type="number" placeholder="Escolha a Quantidade" name="uname" required>
+                    <button type="submit" class="poltrona" onclick="Poltrona()">Escolha de poltrona</button>
+                    <label>
+                        <input type="checkbox" name="remember"> <b>Meia- Entrada</b>
+                    </label>
+
+                    <button type="submit" class="ingressobutton" onclick="Finalizar()">Finalizar Compra</button>
+                </div>
+
+                
+            </form>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
